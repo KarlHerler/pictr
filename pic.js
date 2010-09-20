@@ -24,8 +24,8 @@
 		this.each(function() {
 			//Draws the base view and buttons
    			$(this).html('<div class="pic_c" style="position: absolute;"><span class="pic pic_header">Image <span class="pic_current">1</span> of <span class="pic_total">'+settings.length+'</span>.</span>');
-			$(this).append('<span class="pic pic_prev_hitarea"><span class="pic_prev pic_button">&laquo; prev</span></span>');
-			$(this).append('<span class="pic pic_next_hitarea"><span class="pic_next pic_button">next &raquo;</span></span>');
+			$(this).append('<span class="pic pic_prev_hitarea"><span class="pic_button">&laquo; prev</span></span>');
+			$(this).append('<span class="pic pic_next_hitarea"><span class="pic_button">next &raquo;</span></span>');
 			
 			//Draws the first image and "preloads" the rest, this could perhaps be done more conservatively
 			for (var i=0;i<settings.length;i++) {
